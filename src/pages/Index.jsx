@@ -71,11 +71,11 @@ const Index = () => {
     <Tabs defaultValue="all">
       <div className="flex items-center">
         <TabsList>
-          <TabsTrigger value="all">All</TabsTrigger>
-          <TabsTrigger value="active">Active</TabsTrigger>
-          <TabsTrigger value="draft">Draft</TabsTrigger>
+          <TabsTrigger value="all">All Sports</TabsTrigger>
+          <TabsTrigger value="active">Active Sports</TabsTrigger>
+          <TabsTrigger value="draft">Upcoming Events</TabsTrigger>
           <TabsTrigger value="archived" className="hidden sm:flex">
-            Archived
+            Archived Events
           </TabsTrigger>
         </TabsList>
         <div className="ml-auto flex items-center gap-2">
@@ -92,11 +92,11 @@ const Index = () => {
               <DropdownMenuLabel>Filter by</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuCheckboxItem checked>
-                Active
+                Active Sports
               </DropdownMenuCheckboxItem>
-              <DropdownMenuCheckboxItem>Draft</DropdownMenuCheckboxItem>
+              <DropdownMenuCheckboxItem>Upcoming Events</DropdownMenuCheckboxItem>
               <DropdownMenuCheckboxItem>
-                Archived
+                Archived Events
               </DropdownMenuCheckboxItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -109,7 +109,7 @@ const Index = () => {
           <Button size="sm" className="h-8 gap-1">
             <PlusCircle className="h-3.5 w-3.5" />
             <span className="sr-only sm:not-sr-only sm:whitespace-nowrap">
-              Add Product
+              Add Event
             </span>
           </Button>
         </div>
@@ -117,9 +117,9 @@ const Index = () => {
       <TabsContent value="all">
         <Card x-chunk="dashboard-06-chunk-0">
           <CardHeader>
-            <CardTitle>Products</CardTitle>
+            <CardTitle>Sports Events</CardTitle>
             <CardDescription>
-              Manage your products and view their sales performance.
+              Manage your sports events and view their performance.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -128,7 +128,7 @@ const Index = () => {
           <CardFooter>
             <div className="text-xs text-muted-foreground">
               Showing <strong>1-10</strong> of <strong>32</strong>{" "}
-              products
+              sports events
             </div>
           </CardFooter>
         </Card>
