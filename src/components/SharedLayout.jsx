@@ -154,7 +154,21 @@ const SharedLayout = () => {
             </TooltipTrigger>
             <TooltipContent side="right">Statistics</TooltipContent>
           </Tooltip>
-          </TooltipProvider>
+        </TooltipProvider>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <a
+                href="/sports-dashboard"
+                className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
+              >
+                <LineChart className="h-5 w-5" />
+                <span className="sr-only">Sports Dashboard</span>
+              </a>
+            </TooltipTrigger>
+            <TooltipContent side="right">Sports Dashboard</TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
         </nav>
         <nav className="mt-auto flex flex-col items-center gap-4 px-2 sm:py-5">
         <TooltipProvider>
